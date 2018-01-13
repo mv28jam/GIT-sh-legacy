@@ -33,7 +33,7 @@ do
 	
 	if [ $domain != '' ] 
 	then
-	    sed -i -e 's/.tlpt.ru/.'$domain'.tlpt.ru/g' $path/.node-conf.php
+	    sed -i -e 's/.site.ru/.'$domain'.site.ru/g' $path/.node-conf.php
 	fi
 
 	cp $path/.node-template.php $path/.node.php
@@ -46,7 +46,7 @@ do
 	if [ -f $path/$service_template ]; then
 
 	    cp $path/$service_template $path/$service_config
-	    sed -i -e 's/'$pathname'.tlpt.ru/'$pathname'.'$domain'.tlpt.ru/g' $path/$service_config
+	    sed -i -e 's/'$pathname'.site.ru/'$pathname'.'$domain'.tlpt.ru/g' $path/$service_config
 
 	fi
 
