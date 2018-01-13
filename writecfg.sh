@@ -57,8 +57,8 @@ done
 
 #static reverse configs FIXME!
 #temporary ?
-sed -i -e 's/stat.'$domain'.tlpt.ru/stat.tlpt.ru/g' $target_path/$release_path$release/$repo_path/node/.node-conf.php
-sed -i -e 's/wstat.'$domain'.tlpt.ru/wstat.tlpt.ru/g' $target_path/$release_path$release/$repo_path/node/.node-conf.php
+sed -i -e 's/stat.'$domain'.site.ru/stat.tlpt.ru/g' $target_path/$release_path$release/$repo_path/node/.node-conf.php
+sed -i -e 's/wstat.'$domain'.site.ru/wstat.tlpt.ru/g' $target_path/$release_path$release/$repo_path/node/.node-conf.php
 
 
 
