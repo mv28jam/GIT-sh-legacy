@@ -46,7 +46,7 @@ do
 	if [ -f $path/$service_template ]; then
 
 	    cp $path/$service_template $path/$service_config
-	    sed -i -e 's/'$pathname'.site.ru/'$pathname'.'$domain'.tlpt.ru/g' $path/$service_config
+	    sed -i -e 's/'$pathname'.site.ru/'$pathname'.'$domain'.site.ru/g' $path/$service_config
 
 	fi
 
@@ -57,8 +57,8 @@ done
 
 #static reverse configs FIXME!
 #temporary ?
-sed -i -e 's/stat.'$domain'.site.ru/stat.tlpt.ru/g' $target_path/$release_path$release/$repo_path/node/.node-conf.php
-sed -i -e 's/wstat.'$domain'.site.ru/wstat.tlpt.ru/g' $target_path/$release_path$release/$repo_path/node/.node-conf.php
+sed -i -e 's/stat.'$domain'.site.ru/stat.site.ru/g' $target_path/$release_path$release/$repo_path/node/.node-conf.php
+sed -i -e 's/wstat.'$domain'.site.ru/wstat.site.ru/g' $target_path/$release_path$release/$repo_path/node/.node-conf.php
 
 
 
